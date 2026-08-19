@@ -1,0 +1,169 @@
+.tudo-comunidade {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh; 
+  background: url("./../assets/background/backgroundGeral.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tudo-comunidade > :first-child {
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-shrink: 0;
+}
+
+.posts {
+  margin-left: 150px;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  overflow: visible;
+}
+
+.form-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-text img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-text > textarea {
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  outline: none;
+  max-height: 120px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.form-envio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-envio label img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.form-envio label img:hover {
+  transform: scale(1.1);
+}
+
+.form-envio button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-envio button:hover {
+  transform: scale(1.05);
+  background: #5750e6;
+}
+
+.perguntas-home {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.perguntas-home:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.modalReport{
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.39); 
+}
+
+.prinReport{
+  text-align: center;
+  background-color: black;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 10px;
+  animation: op 0.2s ease-in;
+}
+
+.prinReport > button{
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 5px;
+}
+
+.prinReport > textarea{
+  margin: 31px;
+  padding: 15px 15px;
+  border: white;
+  border-radius: 10px;
+  width: 350px;
+  background-color: #060f1e;
+}
+
+@media (max-width: 768px){
+  .posts{
+    margin-left: 0;
+    
+  }
+  .form-post{
+    width: 80%;
+  }
+  .form-text textarea{
+    width: 80%;
+  }
+}

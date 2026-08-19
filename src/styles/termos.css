@@ -1,0 +1,22 @@
+.content-termos{
+    background: linear-gradient(135deg, #050922 0%, #000832 50%, #070B59 100%);
+}
+
+.tudo-termos{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.termos{
+    background-color: black;
+    color: #c5c5c5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 700px;
+    height: 700px;
+    overflow-y: auto;
+}

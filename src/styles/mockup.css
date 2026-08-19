@@ -1,0 +1,115 @@
+.section-perguntar .section-mockup {
+    background-image: url("./../assets/paginaInicial/mockup-pergunta.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+    
+    @supports not (background-image: url(".webp")) {
+        background-image: url("./../assets/paginaInicial/mockup-pergunta.png");
+    }
+}
+
+
+.section-responder .section-mockup {
+    background-image: url("./../assets/paginaInicial/mockup-resposta.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+    @supports not (background-image: url(".webp")) {
+        background-image: url("./../assets/paginaInicial/mockup-resposta.png");
+    }
+}
+
+
+.section-aprender .section-mockup {
+    background-image: url("./../assets/paginaInicial/mockup-comunidade.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+    @supports not (background-image: url(".webp")) {
+        background-image: url("./../assets/paginaInicial/mockup-comunidade.png");
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .section-perguntar .section-mockup,
+    .section-responder .section-mockup,
+    .section-aprender .section-mockup {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .section-perguntar .section-mockup,
+    .section-responder .section-mockup,
+    .section-aprender .section-mockup {
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .section-perguntar .section-mockup,
+    .section-responder .section-mockup,
+    .section-aprender .section-mockup {
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+
+
+    }
+}
+
+@media (max-width: 480px) {
+    .section-perguntar .section-mockup,
+    .section-responder .section-mockup,
+    .section-aprender .section-mockup {
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.section-perguntar .section-mockup,
+.section-responder .section-mockup,
+.section-aprender .section-mockup {
+    will-change: background-image;
+    contain: layout style paint;
+}
+
+
+
+/* Alt text support para leitores de tela */
+.section-perguntar .section-mockup::after,
+.section-responder .section-mockup::after,
+.section-aprender .section-mockup::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

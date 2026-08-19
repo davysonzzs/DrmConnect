@@ -1,0 +1,54 @@
+
+.container-respostas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.resposta-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(25, 25, 119, 0.356);
+    width: 60vw;
+}
+
+.resposta-item:hover {
+    cursor: pointer;
+    background-color: rgba(38, 38, 226, 0.103);
+    transition: ease-out 0.2s;
+    transform: scale(1.02);
+}
+
+.resposta-conteudo > p {
+    margin-left: 15px;
+    width: 70%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.user-info {
+    display: flex;
+    background-color: rgba(37, 37, 179, 0.356);
+    border-radius: 20px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    padding: 5px;
+    
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 3px;
+    border-radius: 50%;
+}

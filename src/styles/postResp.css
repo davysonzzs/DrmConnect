@@ -1,0 +1,124 @@
+.content-post {
+  background: linear-gradient(160deg, #0e1628, #0b1220);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  margin: 20px auto 10px auto;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(120, 160, 255, 0.12);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.content-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+.cabeca-post span {
+  color: #b7c7e6;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(80, 120, 200, 0.08);
+  border: 1px solid rgba(120, 160, 255, 0.12);
+}
+
+.cabeca-post img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(120, 160, 255, 0.2);
+}
+
+.corpo-post {
+  color: #e6edf3;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.corpo-post img {
+  max-width: 100%;
+  max-height: 520px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.resps {
+  background: linear-gradient(160deg, #0b1426, #0a1120);
+  border: 1px solid rgba(120, 160, 255, 0.15);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto 40px auto;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.lista-respostas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-respostas > * {
+  background: rgba(20, 35, 60, 0.55);
+  border: 1px solid rgba(120, 160, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: #d7e3ff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.lista-respostas > *:hover {
+  background: rgba(40, 70, 120, 0.25);
+  transform: translateY(-2px);
+}
+
+.resps input,
+.resps textarea {
+  width: 95.5%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 160, 255, 0.18);
+  background: rgba(10, 18, 35, 0.8);
+  color: #e6edf3;
+  outline: none;
+  transition: 0.2s;
+}
+
+.resps input:focus,
+.resps textarea:focus {
+  border-color: rgba(120, 160, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(80, 130, 255, 0.15);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input[type="file"] {
+  color: #b7c7e6;
+}

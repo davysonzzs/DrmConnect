@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    max-height: 100%;
+    width: 240px;
+    padding-top: 10 0 10 10;
+    padding: 10px;
+    background-color: #000832;
+}
+
+.menu-btn {
+  display: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.btn-redirecionamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 0;
+    margin-bottom: 30px;
+    gap: 30px;
+    padding: 10px;
+}
+
+.btn.ativo {
+    background: #4f46e5;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        width: 24px;
+        height: 24px;
+        z-index: 1000;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .container {
+    position: fixed;
+    z-index: 999;
+    left: -250px;
+    height: 100vh;
+    top: 0;
+    transition: left 0.3s ease;
+    }
+    .container.ativado{
+        left: 0;
+        height: 100vh;
+    }
+}

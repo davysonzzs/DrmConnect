@@ -1,0 +1,462 @@
+.inicial-tudo{
+    background-color: #050922;
+    color: white;
+    width: 100%;
+}
+
+.navbar{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #000832;
+}
+
+.botoes-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.login {
+    width: 110px;
+    height: 45px;
+    border: 1px solid rgba(0, 180, 255, 0.4);
+    border-radius: 10px;
+    background: linear-gradient(145deg, #08121f, #0b1b33);
+    color: #cfe9ff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.2);
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(0, 200, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.6);
+    border-color: rgba(0, 200, 255, 0.8);
+}
+
+.login:hover::before {
+    left: 100%;
+}
+
+.login:active {
+    transform: scale(0.98);
+}
+
+
+.cadastro{
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    font-family: 'poppins', 'ubuntu', sans-serif;
+    background: #007bff;
+    background: linear-gradient(90deg, #007bff 0%, #00bbff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: none !important;
+}
+
+.cadastro :hover{
+    background: #0039757a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transform: none !important;
+}
+
+.nome-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    margin: 0px 40px;
+    gap: 30px;
+}
+ 
+.nav-link {
+    background: none;
+    border: none;
+    color: rgba(207, 233, 255, 0.7);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+    font-family: 'poppins', 'ubuntu', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+ 
+.nav-link:hover {
+    color: #00bbff;
+    text-shadow: 0 0 10px rgba(0, 187, 255, 0.5);
+}
+
+
+.nome-logo h1{
+    background: #007bff;
+    background: linear-gradient(90deg, #007bff 0%, #00bbff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+
+    
+}
+
+.logoIcone{
+    height: 70px;
+    width: 70px;
+}
+
+.hero-novo {
+    height: 100vh;
+    padding: 0px 20px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #050922 0%, #000832 50%, #070B59 100%);
+}
+
+.hero-novo::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 187, 255, 0.3), transparent 70%);
+    filter: blur(60px);
+    z-index: 1;
+}
+
+.hero-novo::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(112, 11, 255, 0.25), transparent 70%);
+    filter: blur(50px);
+    z-index: 1;
+}
+
+.apresentacao {
+    position: relative;
+    z-index: 2;
+}
+
+/* .hero-novo .apresentacao {
+    max-width: 600px;
+}
+
+.hero-novo .titulo h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-novo .textos h2 {
+    font-size: 24px;
+}
+
+.hero-novo .textos h3 {
+    font-size: 16px;
+    line-height: 1.6;
+} */
+
+.imagembackground > img {
+    width: 650px;
+    height: 650px;
+}
+
+/* .titulo span{
+    background: #007bff;
+    background: linear-gradient(90deg, #0061c8 0%, #00bbff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    text-shadow: 0 0 5px #0097ce;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1px;
+} */
+
+.comecar {
+    position: relative;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 5px #0097ce;
+    font-family: 'poppins', 'ubuntu', sans-serif;
+}
+
+.comecar {
+    position: relative;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 151, 206, 0.6);
+    font-family: 'poppins', 'ubuntu', sans-serif;
+    transition: 0.3s ease;
+}
+
+.comecar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #0061c8,
+        #00bbff,
+        #0061c8
+    );
+
+    background-size: 200% 200%;
+    animation: borderMove 3s linear infinite;
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.comecar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 187, 255, 0.8);
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.subHeader{
+    margin: 70px 0 70px 0;
+}
+
+.subHeader h2{
+    font-weight: 500;
+    font-size: 45px;
+    word-spacing: 200px;
+}
+
+
+@media (max-width: 768px){
+    .imagembackground > img{
+        width: 100px;
+        height: 100px;
+    }
+    .linha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo > h1{
+        display: flex;
+        flex-direction: column;
+        line-height: 0.8;
+    }
+    .titulo{
+        justify-content: start;
+    }
+}
+
+hr{
+    margin: 0;
+    padding: 2px;
+    background-color: black;
+    border: none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+ 
+    .navbar-links {
+        gap: 20px;
+    }
+}
+ 
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+ 
+    .navbar-links {
+        gap: 15px;
+    }
+ 
+    .nav-link {
+        font-size: 14px;
+    }
+ 
+    .login, .cadastro {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 10px;
+        gap: 10px;
+    }
+ 
+    .cabeca-inicial {
+        width: auto;
+    }
+ 
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        margin: 0px 12px;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+ 
+    .nav-link {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+ 
+    .botoes-login {
+        order: 2;
+        
+        gap: 8px;
+    }
+ 
+    .login, .cadastro {
+        width: 70px;
+        height: 40px;
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+ 
+    .logoIcone {
+        width: 36px;
+        height: 36px;
+    }
+    .nome-logo{
+        width: 36.05px;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .navbar {
+        padding: 7px 5px;
+        gap: 4px;
+    }
+ 
+    .navbar-links {
+        margin: 0px 8px;
+        gap: 6px;
+    }
+ 
+    .nav-link {
+        font-size: 11px;
+        padding: 4px 0;
+    }
+ 
+    .logoIcone {
+        width: 22px;
+        height: 22px;
+    }
+ 
+    .login, .cadastro {
+        width: 55px;
+        height: 30px;
+        padding: 6px 1px;
+        font-size: 10px;
+    }
+    .botoes-login{
+        gap: 8px;
+    }
+}
+ 
+@media (max-width: 360px) {
+    .navbar {
+        padding: 8px 3px;
+        gap: 6px;
+    }
+ 
+    .navbar-links {
+        gap: 6px;
+    }
+ 
+    .nav-link {
+        font-size: 10px;
+    }
+ 
+    .login, .cadastro {
+        width: 55px;
+        height: 30px;
+        padding: 5px 1px;
+        font-size: 9px;
+    }
+ 
+    .logoIcone {
+        width: 22px;
+        height: 22px;
+    }
+
+    .botoes-login{
+        gap: 1px;
+    }
+}
