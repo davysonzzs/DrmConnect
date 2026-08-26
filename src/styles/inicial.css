@@ -1,3 +1,5 @@
+@import url("variaveis-css.css");
+
 .inicial-tudo{
     background-color: #050922;
     width: 100%;
@@ -12,7 +14,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: #000832;
+/*       background: var(--color-navbar-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(107, 51, 158, 0.25);  */
 }
 
 .botoes-login{
