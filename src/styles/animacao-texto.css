@@ -1,6 +1,6 @@
 /* ==================== ANIMAÇÃO DO H1 DENTRO DE .titulo ====================*/
 
-.titulo h1 {
+.titulos h1 {
     margin: 0;
     font-weight: 900;
     line-height: 1.1;
@@ -27,27 +27,23 @@
     
     70% {
         opacity: 1;
-        text-shadow: 0 0 30px rgba(0, 187, 255, 0.6);
     }
     
     /* Redimensiona de volta */
     85% {
         opacity: 1;
-        text-shadow: 0 0 5px rgba(0, 187, 255, 0.2);
     }
     
     100% {
         opacity: 1;
-        text-shadow: 0 0 5px rgba(0, 187, 255, 0.2);
     }
 }
 
 /* Manter o span com a cor ciano */
-.titulo h1 span {
-    background: linear-gradient(90deg, #0061c8 0%, #00bbff 30%);
+.titulos h1 span {
+    background: linear-gradient(90deg, var(--purple-700) 0%, var(--purple-400) 30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 /* ==================== ANIMAÇÃO DOS TEXTOS (.textos) ====================*/
