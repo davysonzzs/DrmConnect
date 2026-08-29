@@ -1,13 +1,16 @@
+@import url("../../styles/variaveis-css.css");
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 50px;
-    background: radial-gradient(circle at top, #0a0014, #05010a);
+    background: var(--color-navbar-bg);
     color: #fff;
-    border-top: 1px solid #8a2be266;
-    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
     border: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(107, 51, 158, 0.25);
 }
 
 .footer h3 {

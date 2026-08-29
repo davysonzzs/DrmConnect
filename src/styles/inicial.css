@@ -1,7 +1,7 @@
 @import url("variaveis-css.css");
 
 .inicial-tudo{
-    background-color: #050922;
+    background-color: var(--purple-950);
     width: 100%;
 }
 
@@ -303,6 +303,7 @@
     font-weight: 500;
     font-size: 45px;
     word-spacing: 200px;
+    color: var(--purple-500);
 }
 
 

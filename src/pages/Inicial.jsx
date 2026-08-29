@@ -106,11 +106,8 @@ export default function  Inicial(){
                 </marquee>        
             </div>
             <SectionPerguntar />
-            <hr />
             <SectionResponder />
-            <hr />
             <SectionAprender />
-            <hr />
             <Footer/>
         </div>
     )
